@@ -1,5 +1,5 @@
 # GETS
-GETS: a Genomic Tree based Sparse solver 
+GETS: a Genomic Tree based Sparse solver. 
 Written by Srinivas Subramanian and Tim Davis.
 
 Refer to the article "A genomic tree based sparse solver" 
