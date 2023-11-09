@@ -28,7 +28,7 @@ The installation takes about a minute and you will see the "CSparse successfully
 
 ***********************************************************************************
 
-# Run the MATLAB scripts to test GETS/reproduce the results in the article 
+# Run the MATLAB scripts to test GETS or to reproduce the results in the article 
 
 1) First install GETS for use in MATLAB by following the steps shown above 
 2) Go to the GETS/MATLAB/Tests directory 
