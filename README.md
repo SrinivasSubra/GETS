@@ -1,31 +1,51 @@
 # GETS
-GETS: a Genomic Tree based Sparse solver. 
-By Dr. Timothy A. Davis and Srinivas Subramanian. 
+GETS: a Genomic Tree based Sparse solver 
+Written by Srinivas Subramanian and Tim Davis.
 
-Nonnegative sparse recovery for a metagenomics problem. 
-Nonnegative least squares optimization problem is solved via the Lawson Hanson algorithm. 
-GETS is a C based solver with a MATLAB mex function interface for the solver and offline stage  computations. 
-Refer to the write up (to be included). 
+Refer to the article "A genomic tree based sparse solver" 
+by Timothy A. Davis and Srinivas Subramanian (see GETS_article.pdf in this directory).
 
-The main idea - discovering an evolutionary family tree type relationship between the columns of the k-mer matrix that allows for a sparse representation of the data giving us reduced storage and large asymptotic speed ups. The offline computations create a struct that encapsulates the compact representation of the problem 
-(See GETS/Source/gets_offline.c and GETS/MATLAB/Test/Offline.m).
-This struct is utilized by the main solver to efficiently compute C’r and Cx
-(See GETS/Source/gets_nnls.c).
-C'r, the main bottleneck of the algorithm, is asymptotically sped up by exploiting the tree relationships. It becomes equivalent to a sparse matrix times dense vector problem. 
-Further, QR updates are implemented to speed up the Lawson Hanson NNLS algorithm.
+Nonnegative sparse recovery for a genomics problem. 
+NNLS/NNREG optimization problems solved via GETS implementation of Lawson Hanson algorithm. 
+GETS is a C based solver with a MATLAB mexFunction interfaces for the solver and offline stage computations. 
 
-GETS uses CSparse, a concise sparse matrix package by Dr. Timothy A. Davis. 
-This package is already included in the GETS/MATLAB directory. 
+GETS uses CSparse, a concise sparse matrix package by Tim Davis. 
+This package (CSparse v4.0.0) is already included in the GETS/MATLAB directory and does not need to be separately installed. 
 
-In MATLAB, type "gets_install" while in the GETS/MATLAB directory to
-compile and install GETS and CSparse for use in MATLAB. 
 
-To perform the tests for the solver or the offline computations, run the MATLAB scripts in the 
-GETS/MATLAB/Tests directory. The tests compare the performance of GETS with MATLAB's lsqnonneg.  
+***********************************************************************************
 
-Acknowledgements to Dr. Simon Foucart for introducing this problem and to Dr. David Koslicki for providing the metagenomic data. 
+****** INSTALLATION FOR USE IN MATLAB *********************************************
 
---------------------------------------------------------------------------------
-Contents:
---------------------------------------------------------------------------------
-TO DO 
+To compile and install GETS for use in MATLAB (along with CSparse),
+
+1) Go to the GETS/MATLAB directory
+
+2) Type "gets_install" in the MATLAB Command Window or equivalently Run "gets_install.m" 
+
+The installation takes about a minute and you will see the "CSparse successfully compiled" and 
+"GETS successfully compiled" messages displayed. 
+
+***********************************************************************************
+
+**** RUN THE MATLAB SCRIPTS TO TEST GETS/REPRODUCE RESULTS IN THE ARTICLE ******
+
+1) First install GETS for use in MATLAB by following the steps shown above 
+2) Go to the GETS/MATLAB/Tests directory 
+3) Run the MATLAB scripts "NNREG_Tests_small.m" for the tests on the small dataset 
+4) Run the MATLAB scripts "NNREG_Tests_large.m" for the tests on the large dataset 
+
+The tests compare the performance of GETS with MATLAB's lsqnonneg.
+You can display the default saved tests results, including the histogram plots, without running the actual tests, by running only the bottom section "Display test results" of the MATLAB scripts. 
+
+To run a single test for a specific right hand side, run the "NNREG_Singletest_small.m" or "NNREG_Singletest_Large.m"
+
+To run tests for NNLS instead of NNREG, just follow the above steps with NNLS in the place of NNREG. 
+
+To perform the offline computations that create the treedata struct, run "Offline.m" 
+
+*************************************************************************************
+
+****** HELP FOR GETS ****************************************************************
+
+In the MATLAB command window type: "help GETS" or "help gets_nnreg", "help gets_nnls", "help gets_offline" to get the MATLAB style help descriptions for using these functions along with examples. 
