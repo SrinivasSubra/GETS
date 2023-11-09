@@ -15,7 +15,7 @@ This package (CSparse v4.0.0) is already included in the GETS/MATLAB directory a
 
 ***********************************************************************************
 
-# INSTALLATION FOR USE IN MATLAB 
+# Installation for use in MATLAB
 
 To compile and install GETS for use in MATLAB (along with CSparse),
 
@@ -28,7 +28,7 @@ The installation takes about a minute and you will see the "CSparse successfully
 
 ***********************************************************************************
 
-# RUN THE MATLAB SCRIPTS TO TEST GETS/REPRODUCE RESULTS IN THE ARTICLE 
+# Run the MATLAB scripts to test GETS/reproduce the results in the article 
 
 1) First install GETS for use in MATLAB by following the steps shown above 
 2) Go to the GETS/MATLAB/Tests directory 
@@ -46,6 +46,6 @@ To perform the offline computations that create the treedata struct, run "Offlin
 
 *************************************************************************************
 
-# HELP FOR GETS 
+# Help for GETS
 
 In the MATLAB command window type: "help GETS" or "help gets_nnreg", "help gets_nnls", "help gets_offline" to get the MATLAB style help descriptions for using these functions along with examples. 
