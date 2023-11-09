@@ -1,8 +1,10 @@
 # GETS
 GETS: a Genomic Tree based Sparse solver. 
+
 Written by Srinivas Subramanian and Tim Davis.
 
 Refer to the article "A genomic tree based sparse solver" 
+
 by Timothy A. Davis and Srinivas Subramanian (see GETS_article.pdf in this directory).
 
 Nonnegative sparse recovery for a genomics problem. 
