@@ -7,7 +7,7 @@ Refer to the article "A genomic tree based sparse solver"
 by Timothy A. Davis and Srinivas Subramanian (see GETS_article.pdf in this directory).
 
 Nonnegative sparse recovery for a genomics problem. 
-NNLS/NNREG optimization problems solved via GETS implementation of Lawson Hanson algorithm. 
+NNLS/NNREG optimization problems solved via GETS implementation of the Lawson Hanson algorithm. 
 GETS is a C based solver with a MATLAB mexFunction interfaces for the solver and offline stage computations. 
 
 GETS uses CSparse, a concise sparse matrix package by Tim Davis. 
@@ -50,3 +50,4 @@ To perform the offline computations that create the treedata struct, run "Offlin
 # Help for GETS
 
 In the MATLAB command window type: "help GETS" or "help gets_nnreg", "help gets_nnls", "help gets_offline" to get the MATLAB style help descriptions for using these functions along with examples. 
+For questions or comments contact Srinivas Subramanian (email:srini2092@tamu.edu).
