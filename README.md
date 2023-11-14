@@ -17,7 +17,7 @@ GETS is primarily written in C, with an interface for use in MATLAB through its 
 GETS uses CSparse, a concise sparse matrix package by Tim Davis. 
 This package (CSparse v4.0.0) is already included in the GETS/MATLAB directory and does not need to be separately installed. 
 
-Note: This repository uses Git Large File Storage (Git LFS) since the size of the Data directory is about 500MB. A repository with LFS data can be cloned (i.e., with the usual git clone command), but the 'Download ZIP' button on the GitHub web interface doesn't include the large files, only the pointers. A complete zipped version of GETS which includes the large files can be directly downloaded via this link: https://drive.google.com/file/d/1U-uuCk20DGlMJ3A-YhubMYTMZ9-Eo1DL/view?usp=share_link. 
+Note: This repository uses Git Large File Storage (Git LFS) since the size of the Data directory is about 500MB. A repository with LFS data can be cloned (i.e., with a git clone command after making sure git lfs is installed), but the 'Download ZIP' button on the GitHub web interface doesn't include the large files, only the pointers. A complete zipped version of GETS which includes the large files can be directly downloaded via this link: https://drive.google.com/file/d/1U-uuCk20DGlMJ3A-YhubMYTMZ9-Eo1DL/view?usp=share_link. 
 
 ***********************************************************************************
 
