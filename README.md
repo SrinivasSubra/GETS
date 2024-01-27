@@ -3,8 +3,8 @@ GETS: a Genomic Tree based Sparse solver.
 
 Written by Srinivas Subramanian and Tim Davis.
 
-Refer to the article "A genomic tree based sparse solver" 
-by Timothy A. Davis and Srinivas Subramanian (see GETS_article.pdf in this directory).
+Refer to the article "A genomic tree based sparse solver"  
+by Timothy A. Davis and Srinivas Subramanian, accepted for publication  in the forthcoming Birkhäuser-ANHA book "Explorations in the Mathematics of Data Science" (see GETS_article.pdf in this directory).
 
 Nonnegative sparse recovery is performed for a genomics problem which is concerned with the reconstruction of concentrations of bacterial species from an environmental sample.
 
